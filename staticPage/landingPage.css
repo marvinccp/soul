@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -6,34 +6,124 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-body{
-background-color: #fefefe;
+
+body {
+    background-color: #fefefe;
 
 }
-header{
-    width: 100%;
+
+header {
+    max-width: 100vw;
     height: 7vh;
-    background-color: #781b67;
+    background-color: #ed3921;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
+    margin: 0 0 0 0;
 }
-.logo-app{
-color: #fefefe;
-font-size: 1.3rem;
+
+.logo-app {
+    color: #fefefe;
+    font-size: 1.3rem;
 }
-.hamburguer-item{
+
+.hamburguer-item {
     display: none;
 }
-.nav-bar ul{
+
+.nav-bar ul {
     display: flex;
+    gap: 20px;
 
 }
-.nav-bar ul li a{
+
+.nav-bar ul li a {
     display: block;
-    color:#fefefe ;
+    color: #fefefe;
     font: 1.3rem;
     padding: 7px 12px;
-    border-radius: 20px;
+    border-radius: 10px;
+}
+
+.nav-bar ul li a:hover {
+    color: #ed3921;
+    background: #fefefe;
+}
+
+.nav-bar ul li a.active {
+    color: #ed3921;
+    background: #fefefe;
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hamburguer-item {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburguer-item .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        position: absolute;
+        top: 7vh;
+        left: -100%;
+        right: 0;
+        width: 100%;
+        height: 450px;
+        background: #11101b;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        left: 0;
+    }
+
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 130px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin: 0 0 15px 0;
+    }
+
+    .nav-bar ul li a:hover {
+        color: #1c1c1c;
+        background: #fefefe;
+    }
+
+    .nav-bar ul li a.active {
+        color: #1c1c1c;
+        background: #fefefe;
+    }
+
 }
