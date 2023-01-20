@@ -1,31 +1,39 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    list-style: none;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
 }
+body{
+background-color: #fefefe;
 
-.header-container{
-    background-color: rgb(12, 12, 12);
-    height: 8vh;
+}
+header{
     width: 100%;
+    height: 7vh;
+    background-color: #781b67;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: aliceblue;
-    
+    justify-content: space-between;
+    padding: 0 100px;
 }
-.header-container h2{
- font-weight: 200;
- font-size: 1.3rem;
+.logo-app{
+color: #fefefe;
+font-size: 1.3rem;
 }
+.hamburguer-item{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
 
-.nav-options-container{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin: 0 0 0 60px;
-     gap: 25px;
 }
-.nav-options-container li{
-     list-style: none;
+.nav-bar ul li a{
+    display: block;
+    color:#fefefe ;
+    font: 1.3rem;
+    padding: 7px 12px;
+    border-radius: 20px;
 }
