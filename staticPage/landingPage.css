@@ -38,7 +38,7 @@ header {
 
 }
 
-.nav-bar ul li a {
+.nav-bar ul li h4 {
     display: block;
     color: #fefefe;
     font: 1.3rem;
@@ -46,15 +46,16 @@ header {
     border-radius: 10px;
 }
 
-.nav-bar ul li a:hover {
+.nav-bar ul li h4:hover {
     color: #ed3921;
     background: #fefefe;
 }
 
-.nav-bar ul li a.active {
+.nav-bar ul li h4.active {
     color: #ed3921;
     background: #fefefe;
 }
+
 
 @media only screen and (max-width: 1320px) {
     header {
@@ -112,16 +113,16 @@ header {
         opacity: 1;
     }
 
-    .nav-bar ul li a {
+    .nav-bar ul li h4 {
         margin: 0 0 15px 0;
     }
 
-    .nav-bar ul li a:hover {
+    .nav-bar ul li h4:hover {
         color: #1c1c1c;
         background: #fefefe;
     }
 
-    .nav-bar ul li a.active {
+    .nav-bar ul li h4.active {
         color: #1c1c1c;
         background: #fefefe;
     }
