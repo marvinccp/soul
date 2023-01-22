@@ -25,15 +25,6 @@
 }
 
 .item-1:hover {
-    width: 90%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
-    background-image: url('../images/uno.jpg');
-    background-position: center;
-    background-size: cover;
     filter: grayscale(0);
 }
 
@@ -107,27 +98,61 @@ img {
     background-size: cover;
     filter: grayscale();
 }
-
-.item-2:hover {
-    width: 90%;
+.item-3 {
+    width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(241, 51, 216);
 
-    background-image: url('../images/dos.jpg');
+    background-image: url('../images/new.jpg');
     background-position: center;
     background-size: cover;
-    filter: grayscale(0);
+    filter: grayscale();
+    background-repeat: no-repeat;
 }
 
+.item-2:hover {
+    filter: grayscale(0);
+}
+.secundary-banner{
+      width: 80%;
+      height: 400px;
+      background-color: aqua;
+      margin: 20px auto 40px auto;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+.secundary-banner H1{
+      color: white;
+      font-size: 2rem;  
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    color: white;
+}
+.footer-container h5{
+    font-weight: 100;
+}
 @media(min-width:768px) {
     .images-home {
         width: 80%;
         height: 400px;
         /* background-color: aqua; */
         margin: 40px auto 0 auto;
+    }
+    .secundary-banner H1 {
+        color: white;
+        font-size: 3.5rem;
     }
 
 
@@ -150,11 +175,26 @@ img {
     }
 
     .main-discounts {
-        height: 90px;
+        width: 70%;
+        height: 70px;
     }
 
     .main-discounts h4 {
         font-size: 1.5rem;
+    }
+
+    .secundary-banner {
+        width: 70%;
+        margin: 40px auto 40px auto;
+      
+    }
+    .secundary-banner H1 {
+        color: white;
+        font-size: 5rem;
+    }
+    .footer-container h5 {
+        font-weight: 100;
+        font-size: 1.2rem;
     }
 
 }
