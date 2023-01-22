@@ -4,9 +4,14 @@ hamburgerItem.addEventListener("click", () => {
   navBar.classList.toggle("active");
 });
 
+
+const routes = {
+  "about": "../pages/about.html",
+};
+
 const about = document.querySelector(".about");
 about.addEventListener("click", () => {
-  location.href = "../pages/about.html"
+  location.href = routes['about']
 });
 
 const home = document.querySelector(".home");
