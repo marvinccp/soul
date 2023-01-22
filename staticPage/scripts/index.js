@@ -31,7 +31,7 @@ contact.addEventListener("click", () => {
 
 const title = document.querySelector(".title");
 title.addEventListener("click", () => {
-  location.href = "../public/index.html"
+  location.href = "../pages/index.html"
 });
 
 

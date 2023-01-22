@@ -1,59 +1,160 @@
-.home-main-container {
-    max-width: 90%;
-    height: 500px;
-    margin: 40px auto 0 auto;
-}
-
-.image-home-grid{
+.images-home {
+    width: 90%;
     height: 400px;
-    max-width: 90%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 300px 300px;
-    gap: 12px;
+    /* background-color: aqua; */
+    margin: 20px auto 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-.home-image1{
-    background-color: blue;
+
+.item-1 {
+    width: 90%;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-.home-image2{
     background-color: blue;
+    background-image: url('../images/uno.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: grayscale();
+}
+
+.item-1:hover {
+    width: 90%;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-.home-image1 img{
-    width: 90%;
-}
-.home-image2 img{
-    width: 90%;
-}
-.home-image2{
-    background-color: rgb(194, 11, 161);
+    background-color: blue;
+    background-image: url('../images/uno.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(0);
 }
 
-@media(min-width: 768px){
-    .home-main-container {
-        max-width: 75%;
-        height: 500px;
+img {
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.discount-button {
+    padding: 3px 7px;
+    cursor: pointer;
+    border: none;
+    outline: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 2px;
+}
+
+.discount-button:hover {
+
+    background-color: white;
+    color: rgb(42, 42, 42);
+
+}
+
+.woman-button {
+    width: 100px;
+    height: 35px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    outline: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.man-button {
+    width: 100px;
+    height: 35px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    outline: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.main-discounts {
+    display: flex;
+    width: 81%;
+    height: 50px;
+    align-items: center;
+    margin: 20px auto 0 auto;
+    justify-content: space-around;
+    background-color: black;
+    color: aliceblue;
+}
+
+.item-2 {
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 51, 216);
+
+    background-image: url('../images/dos.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: grayscale();
+}
+
+.item-2:hover {
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 51, 216);
+
+    background-image: url('../images/dos.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(0);
+}
+
+@media(min-width:768px) {
+    .images-home {
+        width: 80%;
+        height: 400px;
+        /* background-color: aqua; */
         margin: 40px auto 0 auto;
     }
 
-    .image-home-grid {
-        height: 400px;
-        max-width: 80%;
-        margin: 0 auto 0 auto;
+
+    .main-discounts {
+        width: 80%;
+        font-size: 1.4rem;
     }
 
-    .home-image1 img {
-        width: 100%;
+    .images-home {
+        flex-direction: row;
+        gap: 15px;
+    }
+}
+
+@media(min-width:1500px) {
+
+    .images-home {
+        width: 70%;
+        height: 450px;
     }
 
-    .home-image2 img {
-        width: 100%;
+    .main-discounts {
+        height: 90px;
     }
+
+    .main-discounts h4 {
+        font-size: 1.5rem;
+    }
+
 }
