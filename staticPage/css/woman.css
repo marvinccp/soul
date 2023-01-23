@@ -1,0 +1,26 @@
+main {
+    max-width: 100%;
+    height: auto;
+}
+
+.woman-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+
+    width: 100%;
+    filter: grayscale();
+}
+
+.message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    font-size: 2rem;
+    width: 80px;
+    margin: 0 auto;
+}

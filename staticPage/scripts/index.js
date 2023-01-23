@@ -16,7 +16,7 @@ about.addEventListener("click", () => {
 
 const home = document.querySelector(".home");
 home.addEventListener("click", () => {
-  location.href = "../pages/index.html"
+  location.href = "../index.html"
 });
 
 const design = document.querySelector(".design");
@@ -32,6 +32,15 @@ contact.addEventListener("click", () => {
 const title = document.querySelector(".title");
 title.addEventListener("click", () => {
   location.href = "../pages/index.html"
+});
+
+const woman = document.querySelector(".woman");
+woman.addEventListener("click", () => {
+  location.href = "../pages/woman.html"
+});
+const man = document.querySelector(".man");
+man.addEventListener("click", () => {
+  location.href = "../pages/man.html"
 });
 
 

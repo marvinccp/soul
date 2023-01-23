@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
     background-color: blue;
-    background-image: url('../images/uno.jpg');
+    background-image: url('../assets/images/uno.jpg');
     background-position: center;
     background-size: cover;
     filter: grayscale();
@@ -93,7 +93,7 @@ img {
     align-items: center;
     background-color: rgb(241, 51, 216);
 
-    background-image: url('../images/dos.jpg');
+    background-image: url('../assets/images/dos.jpg');
     background-position: center;
     background-size: cover;
     filter: grayscale();
@@ -106,7 +106,7 @@ img {
     align-items: center;
     background-color: rgb(241, 51, 216);
 
-    background-image: url('../images/new.jpg');
+    background-image: url('../assets/images/new.jpg');
     background-position: center;
     background-size: cover;
     filter: grayscale();
