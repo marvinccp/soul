@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <link rel="stylesheet" href="/css/styles.css" />
- <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
     <script defer src="/scripts/index.js"></script>
+    <script defer src="/scripts/form.js"></script>
     <title>Contact</title>
   </head>
   <body>
@@ -21,7 +22,7 @@
         <ul>
           <li class="home">
             <!-- <a onclick="route()"  href="/">Home</a> -->
-            <h4 >Home</h4>
+            <h4>Home</h4>
           </li>
           <li class="about">
             <!-- <a onclick="route()"  href="/about">About</a> -->
@@ -47,11 +48,18 @@
       </nav>
     </header>
     <div class="form-container">
-      <form class="form" action="">
-        <input placeholder="Name" type="text">
-        <input placeholder="E-mail" type="text">
-        <textarea placeholder="Message" name="" id="" cols="30" rows="5"></textarea>
-        <input class="submit" value="Send Message" type="submit">
+      <form class="form" id="post-form">
+        <input id="name" name="nameInput" placeholder="Name" type="text" />
+        <input id="mail" name="mailInput" placeholder="E-mail" type="email" />
+        <textarea
+  
+          placeholder="Message"
+          name="messageInput"
+          id=""
+          cols="30"
+          rows="5"
+        ></textarea>
+        <input id="submit" class="submit" value="Send Message" type="submit" />
       </form>
     </div>
   </body>
