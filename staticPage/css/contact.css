@@ -1,0 +1,45 @@
+.form-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 15px;
+}
+
+input {
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid rgb(163, 163, 163);
+    text-indent: 10px;
+}
+
+textarea {
+    border: none;
+    outline: 1px solid rgb(163, 163, 163);
+    border-radius: 5px;
+}
+textarea::placeholder{
+    padding: 28px;
+    text-align: center;
+}
+
+.submit{
+
+    border: aqua;
+    background-color: rgb(57, 198, 47);
+    color: aliceblue;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: rgb(38, 176, 28);
+}
