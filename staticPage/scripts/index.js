@@ -5,13 +5,11 @@ hamburgerItem.addEventListener("click", () => {
 });
 
 
-const routes = {
-  "about": "../pages/about.html",
-};
+
 
 const about = document.querySelector(".about");
 about.addEventListener("click", () => {
-  location.href = routes['about']
+  location.href = "../pages/about.html";
 });
 
 const home = document.querySelector(".home");

@@ -26,6 +26,7 @@ form.addEventListener('submit', (e) =>{
 
     }else{
         let parsedSoul = JSON.parse(infoSoul)
+        console.log(parsedSoul);
         let newMessage = [...parsedSoul, formValues];
         localStorage.setItem("SOUL", JSON.stringify(newMessage));
     }
