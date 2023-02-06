@@ -2,6 +2,14 @@ const hamburgerItem = document.querySelector(".hamburguer-item");
 hamburgerItem.addEventListener("click", () => {
   const navBar = document.querySelector(".nav-bar");
   navBar.classList.toggle("active");
+
+  const first = document.getElementById('first')
+  first.classList.toggle("effect1");
+  const second = document.getElementById("second");
+  second.classList.toggle("effect2");
+  const third = document.getElementById("third");
+  third.classList.toggle("effect3");
+  
 });
 
 
